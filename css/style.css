@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+    padding-inline: 45px;
+
+    .logo {
+        height: 80px;
+    }
+
+    ul {
+        gap: 30px;
+
+        list-style: none;
+        display: flex;
+    }
+}
+
+.banner {
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    section {
+        display: flex;
+
+        img {
+            width: 50dvw;
+            height: 28dvw;
+        }
+
+        .ladinho {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 48dvw;
+
+            .up {
+                height: 10.5dvw;
+                font-size: 3.8rem;
+                padding-inline: 30px;
+
+                .txtW {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+            }
+
+            .down {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: flex-end;
+                height: 10.5dvw;
+                width: 50dvw;
+                padding: 30px;
+                font-size: 2rem;
+
+                .txtB {
+                    font-size: 2rem;
+                }
+
+                .txtW {
+                    font-size: 3rem;
+                }
+            }
+
+            .btn {
+                /* width: 98%; */
+                background-color: #00AEF0;
+                height: 7dvw;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 50px;
+                font-size: 2rem;
+
+                img {
+                    width: 4dvw;
+                    height: 4dvw;
+                }
+            }
+        }
+    }
+}
+
+.txtB {
+    color: #00AEF0;
+}
+
+.txtW {
+    color: white;
+}
+
+section {
+    font-family: 'Arial', sans-serif;
+}
+
+.off {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00AEF0;
+    color: white;
+    padding: 2px;
+    border-radius: 6px;
+    width: 74px;
+}
+
+.tenis {
+    background-color: #F2F2F2;
+    width: 18dvw;
+    height: 18dvw;
+    padding: 10px;
+    border-radius: 15px;
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bc1 {
+    background-image: url('../img/tenis-01.png');
+}
+
+.bc2 {
+    background-image: url('../img/tenis-02.png');
+}
+
+.bc3 {
+    background-image: url('../img/tenis-03.png');
+}
+
+.bc4 {
+    background-image: url('../img/tenis-04.png');
+}
+
+.bc5 {
+    background-image: url('../img/tenis-05.png');
+}
+
+.preco {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+    .red {
+        color: red;
+    }
+
+    .linha {
+        text-decoration: line-through;
+    }
+}
+
+.parcela {
+    color: grey;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    width: 18dvw;
+    gap: 8px;
+}
+
+.List-Tenis {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.teste {
+    font-size: 2rem;
+    padding-left: 9dvw;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.quadrado {
+    width: 35dvw;
+    height: 35dvw;
+    background-color: black;
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .cima {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+
+        h2 {
+            font-size: 3rem;
+            width: 20dvw;
+        }
+
+        img {
+            width: 6dvw;
+            height: 6dvw;
+        }
+
+        p {
+            font-weight: bold;
+            padding: 100px;
+        }
+    }
+}
+
+.XYZ {
+    font-weight: bold;
+    padding-inline: 40px;
+}
