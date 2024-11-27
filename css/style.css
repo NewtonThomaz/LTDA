@@ -21,9 +21,12 @@ nav {
 
     ul {
         gap: 30px;
-
         list-style: none;
         display: flex;
+
+        li {
+            cursor: pointer;
+        }
     }
 }
 
@@ -72,26 +75,15 @@ nav {
                 height: 10.5dvw;
                 width: 50dvw;
                 padding: 30px;
-                font-size: 2rem;
-
-                .txtB {
-                    font-size: 2rem;
-                }
-
-                .txtW {
-                    font-size: 3rem;
-                }
+                font-size: 3rem;
             }
 
             .btn {
-                /* width: 98%; */
+                width: 50dvw;
                 background-color: #00AEF0;
                 height: 7dvw;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                padding: 50px;
-                font-size: 2rem;
 
                 img {
                     width: 4dvw;
@@ -157,6 +149,10 @@ section {
     background-image: url('../img/tenis-05.png');
 }
 
+.bc6 {
+    background-image: url('../img/tenis-06.png');
+}
+
 .preco {
     font-weight: bold;
     display: flex;
@@ -182,12 +178,14 @@ section {
     flex-direction: column;
     width: 18dvw;
     gap: 8px;
+    padding-bottom: 20px;
 }
 
 .List-Tenis {
     display: flex;
     justify-content: center;
     gap: 50px;
+    padding-bottom: 10px;
 }
 
 .teste {
@@ -198,12 +196,22 @@ section {
 }
 
 .quadrado {
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
     width: 35dvw;
     height: 35dvw;
     background-color: black;
     background-size: 95% 95%;
     background-repeat: no-repeat;
     background-position: center;
+    color: white;
+    margin: 4dvw;
+
+    h1 {
+        font-size: 5rem;
+        margin-top: 17dvw;
+        margin-left: 2dvw;
+    }
 
     .cima {
         display: flex;
@@ -227,7 +235,65 @@ section {
     }
 }
 
+.hzt {
+    /* background-color: red;   */
+    width: 50dvw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    font-size: 2rem;
+    height: 7dvw;
+
+}
+
 .XYZ {
     font-weight: bold;
     padding-inline: 40px;
+}
+
+.generos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bc5:hover,
+.bc6:hover {
+    background-size: 110% 110%
+}
+
+.t1:hover,
+.t2:hover,
+.t3:hover,
+.t4:hover {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.hzt:hover {
+    animation: treme 0.5s;
+    animation-iteration-count: 3;
+
+}
+
+@keyframes treme {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    75% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(-2deg);
+    }
 }
